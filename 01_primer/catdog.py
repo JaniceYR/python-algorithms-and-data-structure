@@ -1,13 +1,11 @@
 chars = ['c','a','t','d','o','g']
 def catdog(chars):
-    # print("what?????")
     if len(chars) == 0:
         return [""]
     else:
         last = chars.pop()
         prev = catdog(chars)
         result = []
-        print(prev)
         for item in prev:
           i = 0
           while i <= len(item):
@@ -15,5 +13,5 @@ def catdog(chars):
               i += 1
         return result
 
-print(len(chars))
+print(catdog(chars))
 print(len(catdog(chars)))
