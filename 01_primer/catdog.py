@@ -15,3 +15,14 @@ def catdog(chars):
 
 print(catdog(chars))
 print(len(catdog(chars)))
+
+
+"""
+from itertools import permutations
+s = 'catdog'
+perms = permutations(s)
+res = []
+for x in perms:
+    res.append(''.join(x))
+print(len(res))
+"""
